@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>:root{
+  --primary:#f84848;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #efefef;
+}
+
+
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  overflow: hidden;
+  }
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .shoeBackground{
+    position: relative;
+    width: 455.5px;
+    height: 455.5px;
+    box-shadow: -15px 0 35px rgba(0,0,0,0.1), 0 -15px 35px rgba(0,0,0,0.1), 0 15px 35px rgba(0,0,0,0.1);
+  }
+
+  .gradients{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index:-2;
+
+  }
+.gradient[color="blue"]{
+  background-image: linear-gradient(45deg, #0136af, #22abfa);
+}
+
+.gradient[color="red"]{
+  background-image: linear-gradient(45deg, #ffff, #ffff);
+  width: 100%;
+  z-index: 0;
+}
+
+.gradient[color="black"]{
+  background-image: linear-gradient(180deg, #efefef, #efefef);
+}
+
+.logo{
+  position: absolute;
+  width: 100px;
+  left: 20px;
+  top: 20px;
+}
+
+.share{
+  position: absolute;
+  top:15px;
+  right:15px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--primary);
+  transition: .5s;
+}
+.share:hover{
+  transform: scale(1.1);
+}
+.share i{
+  line-height: 50px;
+}
+ 
+.nike{
+  position: absolute;
+  top: 85px;
+  left: 60px;
+  font-size: 10rem;
+  text-transform: uppercase;
+  line-height: .9;
+  color:#fff;
+  opacity:.1 ;
+  }
+  .shoe{
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 60%
+  }
+
+  .shoe1{
+  display: none;
+  }
+
+.shoe.show{
+  opacity: 1;
+}
+
+.info{
+  height: 50%;
+  width: 30%;
+  background-color:#efefef;
+  z-index: 1;
+  padding: 15px 30px;
+  box-shadow: 15px 0 35px rgba(0,0,0,0.1), 0 -15px 35px rgba(0,0,0,0.1), 0 15px 35px rgba(0,0,0,0.1);
+  }
+
+</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <title>Product Card</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="shoeBackground">
+        <div class="gradients">
+
+        <div class="gradient" color="blue"></div>
+        <div class="gradient" color="red"></div>
+        <div class="gradient" color="green"></div>
+        <div class="gradient" color="orange"></div>
+        <div class="gradient" color="black"></div>
+      
+      <h1 class="nike">nike</h1>
+      <a href="#" class="share"><i class="fas fa-share-alt"></i></a>
+      <img src=
+      "https://cdn.shopify.com/s/files/1/0043/5673/5045/products/adidas_YeezyBoost380PEPPER_FZ1269_1.jpg?v=1600520108" alt="Real shoe picture" style="width:70%" class="shoe show" color="red"></div>
+      <img src=
+      "https://i.imgur.com/65sDOV0.png"alt="1" class="shoe1" color="black"></div>
+
+
+<div class="info">
+<div class="shoeName">
+<h1 class="big">Yeezy 380 Pepper</h1>
+<span class="new">Old</span>
+<h3 class="small">Released 11/28/2020</h3>
+<div class="description"></div>
+<h3 class="title">Yeezy x Adidas</h3>
+<p class="text">Yeezy expanded their 380 line with a new colorway in the Yeezy Boost 380 Pepper.</div>
+<div class="color-container">
+  <h3 class="title">Color</h3>
+  <div class="colors">
+    <span class="color" color="blue"></span>
+    <span class="color" color="red"></span>
+    <span class="color" color="green"></span>
+    <span class="color" color="orange"></span>
+    <span class="color"color="black"></span>
+        </div>
+    </div>
+    <div class="size-container"></div>
+    <h3 class="title">Sizes Avaible</h3>
+    <div class="sizes">
+
+      <span class="size">5</span>
+      <span class="size">6</span>
+      <span class="size">7</span>
+      <span class="size">8</span>
+      <span class="size">9</span>
+      <span class="size">10</span>
+      <span class="size">11</span>
+      <span class="size">12</span>
+    </div>
+    <div class="buy-price">
+      <div class="price">
+        <h2>Resale</h2>
+        <h3>USD 240-260 </h3>
+         <a href="pg1.html" class="block2 title"><img src=
+      "https://vectorified.com/images/home-icon-transparent-background-34.png"alt="" style="width:10%" ></button>
+        </div>
+        
+    <script src="script.js"></script>
+  </body>
+</html>

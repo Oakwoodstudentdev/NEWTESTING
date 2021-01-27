@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>SneakerDropZ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64 unbreakable"><b>SNEAKERDROPZ</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Nike</a> 
+    <a href="#showcase2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adidas</a> 
+    <a href="#showcase3"" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">New Balance</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>SNEAKERDROPZ</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>SNEAKERDROPZ</b></h1>
+    <h1 class="w3-xxxlarge unbreakable"><b>Nike Showcase</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <a target="_blank" href= pg6.html>
+      <img src="https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/b49a087d-a405-406e-ba76-941f88a6ce95/dunk-high-x-notre-midnight-navy-release-date.jpg" style="width:100%" onclick="onClick(this)" alt="Notre Midnight Nike Dunks Jan 23 2020 At 7:00 AM"></a>
+      <a target="_blank" href= pg7.html>
+      <img src="https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/b071208f-cf98-4fd1-87fc-2c8d3fb378dd/sb-dunk-low-pro-street-hawker-release-date.jpg" style="width:100%" onclick="onClick(this)" alt="Dunk Low Pro Street Hawker Jan 22 2020 At 7:00 AM"></a>
+      <a target="_blank" href= pg8.html>
+      <img src="https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/faa3c5e7-486f-49d6-9d2c-b68bce287a6a/air-force-1-silver-snake-release-date-.jpg" style="width:100%" onclick="onClick(this)" alt="Air Force 1 Silver Snake Jan 11 2020 At 7:00 AM"></a>
+    </div>
+
+    <div class="w3-half">
+      <a target="_blank" href= pg9.html>
+      <img src="https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/a42008cd-9545-4473-8890-fec3841d4439/air-max-1-lv8-obsidian-release-date.jpg" style="width:100%" onclick="onClick(this)" alt=""></a>
+      <a target="_blank" href= pg10.html>
+      <img src="https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/aed9bdf0-b748-4493-83fe-07663c57c95a/dunk-high-x-ambush-cosmic-fuchsia-release-date-.jpg" style="width:100%" onclick="onClick(this)" alt=""></a>
+      <a target="_blank" href= pg11.html>
+      <img src="https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/fe16fcda-e64b-4cde-b55c-c96ffdcf31a7/chuck-taylor-all-star-crater-black-release-date.jpg" style="width:100%" onclick="onClick(this)" alt=""></a>
+    </div>
+  </div>
+
+<div class="w3-container" style="margin-top:80px" id="showcase2">
+    <h1 class="w3-xxxlarge unbreakable"><b>Adidas Showcase</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <a target="_blank" href= pg2.html><img src="https://cdn.shopify.com/s/files/1/0043/5673/5045/products/adidas_PW-Sobakov-2.0-Black_GX2481_1.jpg?v=1608648136" style="width:120%" onclick="onClick(this)" alt=""></a>
+      <a target="_blank" href= pg3.html>
+      <img src="https://cdn.shopify.com/s/files/1/0043/5673/5045/products/adidas_HU-NMD-Bold-Yellow_GY0091_1.jpg?v=1608647980" style="width:120%" onclick="onClick(this)" alt=""></a>
+     
+    </div>
+
+    <div class="w3-half">
+      <a target="_blank" href= pg4.html>
+      <img src="https://cdn.shopify.com/s/files/1/0043/5673/5045/products/adidas_YeezyBoost380Onyx_FZ1270_01.jpg?v=1608648062" style="width:120%" onclick="onClick(this)" alt=""></a>
+      <a target="_blank" href= pg5.html>
+      <img src="https://cdn.shopify.com/s/files/1/0043/5673/5045/products/adidas_YeezyBoost380PEPPER_FZ1269_1.jpg?v=1600520108" style="width:120%" onclick="onClick(this)" alt=""></a>
+    </div>
+  </div>
+
+  <div class="w3-container" style="margin-top:80px" id="showcase3">
+    <h1 class="w3-xxxlarge unbreakable"><b>New Balance Showcase</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <a target="_blank" href= pg12.html>
+      <img src="https://cdn.shopify.com/s/files/1/0043/5673/5045/products/NewBalance_xAries327_MS327ARI_1.jpg?v=1604588350" style="width:120%" onclick="onClick(this)" alt=""></a>
+      <a target="_blank" href= pg13.html>
+      <img src="https://cdn.shopify.com/s/files/1/0043/5673/5045/products/New-Balance_Leviis-for-Feet_MS327LVB_1.jpg?v=1605017026" style="width:120%" onclick="onClick(this)" alt="">
+     </a>
+    </div>
+
+    <div class="w3-half">
+      <a target="_blank" href= pg14.html>
+      <img src="https://cdn.shopify.com/s/files/1/0043/5673/5045/products/New-Balance_Tokyo-Design-Studio-Team-Gold_MSNB1YL_1.jpg?v=1609290544" style="width:120%" onclick="onClick(this)" alt="">
+      </a>
+      <a target="_blank" href= pg15.html>
+      <img src="https://cdn.shopify.com/s/files/1/0043/5673/5045/products/NewBalance_xAries327_MS327AIR_1.jpg?v=1608647936" style="width:120%" onclick="onClick(this)" alt=""></a>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
